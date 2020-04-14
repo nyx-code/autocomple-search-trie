@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ADS Project Using Trie</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <h1>Autocomplete the search based on previous<br> history using Trie(Prefix Tree)</h1>
+    <!-- partial:index.partial.html -->
+    <div class='container'>
+        <div class='form-container'>
+            <div class='form-tab'>
+                <div class='search-field'>
+                    <i data-feather="search" class='search-icon'></i>
+                    <p id="placeholder" class='search-placeholder'>Search the Web</p>
+                    <form><input autocomplete="off" type='text' pattern='\S+.*' name='input' id='input'
+                            class='text-field'></form>
+                </div>
+                <div id="search-web" class='search-btn'>
+                    <p>search</p>
+                </div>
+            </div>
+        </div>
+        <div id="main-tab" class='resoult-tab'>
+            <div class='ul-title'>
+                <p id="tab-title">Recent Search</p>
+            </div>
+            <div id="recent-result" class='ul'>
+                <div class='li li-1'>
+                    <div class='li-icon'><i data-feather="search" class='icon'></i></div>
+                    <div class='li-text'>Traffic report 2020</div>
+                </div>
+                <div class='li li-2'>
+                    <div class='li-icon'><i data-feather="search" class='icon'></i></div>
+                    <div class='li-text'>Data audience February</div>
+                </div>
+                <div class='li li-3'>
+                    <div class='li-icon'><i data-feather="search" class='icon'></i></div>
+                    <div class='li-text'>March exhibitions dates</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/PrefixTree.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
